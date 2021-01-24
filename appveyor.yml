@@ -4,4 +4,7 @@ build_script:
 - pwsh: dotnet publish -f netcoreapp3.1
 - pwsh: dotnet publish -f netstandard2.1 PriFormat
 after_build:
-- dotnet pack
+- dotnet pack -p:PackageId=chausner.PriFormat.Forked PriFormat
+artifacts:
+- path: PriFormat/bin/Publish/*.nupkg
+  name: Nuget
