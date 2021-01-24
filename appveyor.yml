@@ -1,0 +1,7 @@
+before_build:
+- pwsh: dotnet restore
+build_script:
+- pwsh: dotnet publish -f netcoreapp3.1
+- pwsh: dotnet publish -f netstandard2.1 PriFormat
+after_build:
+- dotnet pack
