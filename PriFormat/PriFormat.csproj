@@ -2,6 +2,23 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1</TargetFrameworks>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/marcinotorowski/pritools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/marcinotorowski/pritools</RepositoryUrl>
+    <PackageTags>pri</PackageTags>
+    <Description>Tools for parsing and exploring PRI (Package Resource Index) files.</Description>
+    <Copyright />
+    <PackageId>chausner.PriFormat.Forked</PackageId>
+    <Authors>chausner</Authors>
+    <Company />
+    <Product>PriTools</Product>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
